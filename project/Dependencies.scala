@@ -27,7 +27,7 @@ object Version {
   val scalaVer          = "2.12.6"
   val scalaParsersVer   = "1.0.4"
   val akkaSBRVer        = "1.1.2"
-  val akkaManagementVer = "0.17.0"
+  val akkaManagementVer = "0.18.0"
   val scalaTestVer      = "3.0.4"
 }
 
@@ -49,6 +49,8 @@ object Dependencies {
     "ch.qos.logback"                 %  "logback-classic"             % Version.logbackVer,
     "com.lightbend.akka.management" %% "akka-management"              % Version.akkaManagementVer,
     "com.lightbend.akka.management" %% "akka-management-cluster-http" % Version.akkaManagementVer,
+    "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap" % Version.akkaManagementVer,
+    "com.lightbend.akka.discovery" %% "akka-discovery-config"         % Version.akkaManagementVer,
     "com.typesafe.akka"             %% "akka-testkit"                 % Version.akkaVer              % Test,
     "org.scalatest"                 %% "scalatest"                    % Version.scalaTestVer         % Test
   )
